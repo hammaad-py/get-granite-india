@@ -1,9 +1,9 @@
 :root {
-  --sixty-color: #E0DFD5;
-  --thirty-color: #1F2041;
-  --ten-color: #EC0B43;
+  --sixty-color: #326771;
+  --thirty-color: #E0DFD5;
+  --ten-color: #E4FF1A;
   --grey-color: #DDDDDD;
-  --secondary-ten-color: #326771;
+  --secondary-ten-color: #EC0B43;
 }
 
 /*--------------------------------------------------------------
@@ -411,9 +411,13 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
   position: relative;
   padding: 120px 0 0 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
 }
 
 #hero:before {
@@ -603,47 +607,84 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Our Story
 --------------------------------------------------------------*/
-.about {
+.our-story {
   padding: 0;
   margin-top: 40px;
 }
 
-.about .container {
-  background-color: var(--sixty-color);
+.our-story .container {
+  background-color: var(--grey-color);
   padding: 60px 50px;
 }
 
 @media (max-width: 992px) {
-  .about .container {
+  .our-story .container {
     padding: 30px;
   }
 }
 
-.about .content h3 {
+.our-story .content h3 {
   font-weight: 400;
   font-size: 32px;
-  color: var(--grey-color);
+  color: var(--sixty-color);
   font-family: "Poppins", sans-serif;
 }
 
-.about .content ul {
+.our-story .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.our-story .content ul li {
   padding-bottom: 10px;
 }
 
-.about .content ul i {
+.our-story .content ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #28a745;
 }
 
-.about .content p:last-child {
+.our-story .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Product Range
+--------------------------------------------------------------*/
+.product-range {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.product-range .container {
+  background-color: var(--sixty-color);
+  padding: 60px 50px;
+}
+
+@media (max-width: 992px) {
+  .product-range .container {
+    padding: 30px;
+  }
+}
+
+.product-range h3 {
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--thirty-color);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.product-range .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-range .content p:last-child {
   margin-bottom: 0;
 }
 
